@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Rishabh - Premium Portfolio & Personal Branding Website. High-performance Full-Stack Engineer, UI/UX Creator, and Tech Innovator crafting scalable products.">
+  <meta name="keywords" content="Rishabh, Portfolio, Full-Stack Engineer, Creative Developer, UI/UX Designer, Web App Architect">
+  <meta name="author" content="Rishabh">
+  <title>Rishabh | Full-Stack Engineer & Creative Developer Portfolio</title>
+  
+  <!-- FontAwesome Icons for modern developer branding -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Custom branding stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Custom Glass Cursor Follower -->
+  <div id="cursor-follower" class="cursor-follower"></div>
+
+  <!-- Background Ambient Glow Orbs -->
+  <div class="ambient-orb orb-1"></div>
+  <div class="ambient-orb orb-2"></div>
+  <div class="ambient-orb orb-3"></div>
+
+  <!-- ==========================================
+       HEADER & NAVIGATION
+       ========================================== -->
+  <header>
+    <div class="container nav-container">
+      <a href="#" class="logo" aria-label="Rishabh Home">
+        Rishabh<span>.</span>
+      </a>
+      
+      <nav aria-label="Main Navigation">
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
+          <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+          <li><a href="#testimonials" class="nav-link">Endorsements</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <!-- Interactive Theme Switcher Button -->
+        <button class="btn-theme-toggle" id="theme-toggle-btn" aria-label="Toggle Light/Dark Theme">
+          <i class="fa-solid fa-moon"></i>
+          <i class="fa-solid fa-sun"></i>
+        </button>
+        <button class="btn-nav-cta" onclick="location.href='#contact'" aria-label="Let's Talk">
+          <i class="fa-solid fa-paper-plane"></i>
+          <span>Let's Talk</span>
+        </button>
+      </div>
+
+      <button class="mobile-nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Toggle navigation menu">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- ==========================================
+         HERO SECTION
+         ========================================== -->
+    <section class="hero" id="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="hero-intro-tag">
+            <i class="fa-solid fa-code text-gradient-primary"></i> Full-Stack Software Engineer
+          </div>
+          <h1 class="hero-title">
+            Building Scale.
+            <span class="text-gradient-primary">Engineering Experiences.</span>
+          </h1>
+          <div class="hero-typing-wrap">
+            <span>I'm a&nbsp;</span><span class="hero-typing-text" id="typing-text"></span>
+          </div>
+          <p class="hero-desc">
+            I design and build high-performance web applications, scalable cloud architectures, and premium user experiences. Bridging robust computer science foundations with state-of-the-art interactive aesthetics.
+          </p>
+          <div class="hero-buttons">
+            <a href="#portfolio" class="btn-primary" role="button">
+              <i class="fa-solid fa-terminal"></i> View Projects
+            </a>
+            <a href="#contact" class="btn-secondary" role="button">
+              <i class="fa-solid fa-envelope"></i> Let's Connect
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="avatar-halo-wrapper">
+            <div class="avatar-glow"></div>
+            <div class="avatar-ring"></div>
+            <div class="avatar-ring-2"></div>
+            <div class="avatar-content">
+              <img src="rishabh_portrait.png" alt="Rishabh Portrait">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         ABOUT & STATS SECTION
+         ========================================== -->
+    <section class="about-section reveal" id="about">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Engineering Philosophy</span>
+          <h2 class="section-title">At the Intersection of Code & Creativity</h2>
+          <p class="section-desc">Software engineering isn't just about writing code; it's about translating complex system requirements, scalable database architectures, and human-centric design patterns into digital success.</p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-text">
+            <h3>Who I Am & What I Believe</h3>
+            <p>
+              I am a specialized Full-Stack Engineer, Creative Developer, and Technical Architect. I design premium web portals, coordinate API integration pipelines, and structure scalable multi-tier web platforms.
+            </p>
+            <p>
+              Whether implementing high-performance React architectures, optimizing backend databases to mitigate network latency, or orchestrating automated CI/CD deployment runs to match seasonal product sprints, I align engineering metrics with corporate product objectives.
+            </p>
+          </div>
+
+          <div class="stats-matrix">
+            <div class="stat-box glass-card">
+              <div class="stat-num color-primary">5+</div>
+              <div class="stat-label">Years Industry Experience</div>
+            </div>
+            <div class="stat-box glass-card">
+              <div class="stat-num color-secondary">$15M+</div>
+              <div class="stat-label">Cloud & Value Managed</div>
+            </div>
+            <div class="stat-box glass-card">
+              <div class="stat-num color-primary">100+</div>
+              <div class="stat-label">Production Deployments Completed</div>
+            </div>
+            <div class="stat-box glass-card">
+              <div class="stat-num color-secondary">98%</div>
+              <div class="stat-label">Client Retention & SLA</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         INTERACTIVE SKILLS MATRIX
+         ========================================== -->
+    <section class="skills-section reveal" id="skills">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Technical Suite</span>
+          <h2 class="section-title">Professional Skill Matrix</h2>
+          <p class="section-desc">Explore my engineering toolbox. These proficiency indicators animate to reflect hands-on project delivery and structural runtime tuning.</p>
+        </div>
+
+        <div class="skills-wrapper">
+          <!-- Card 1 -->
+          <div class="skills-card glass-card">
+            <div class="skills-card-icon">
+              <i class="fa-solid fa-laptop-code"></i>
+            </div>
+            <h3>Frontend Engineering</h3>
+            <div class="skills-list">
+              <div class="skill-row">
+                <div class="skill-info"><span>React & Next.js Frameworks</span><span>92%</span></div>
+                <div class="skill-progress-bg"><div class="skill-progress-fill" data-percent="92"></div></div>
+              </div>
+              <div class="skill-row">
+                <div class="skill-info"><span>JavaScript & TypeScript</span><span>95%</span></div>
+                <div class="skill-progress-bg"><div class="skill-progress-fill" data-percent="95"></div></div>
+              </div>
+              <div class="skill-row">
+                <div class="skill-info"><span>CSS & Interactive UI Elements</span><span>88%</span></div>
+                <div class="skill-progress-bg"><div class="skill-progress-fill" data-percent="88"></div></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="skills-card glass-card">
+            <div class="skills-card-icon">
+              <i class="fa-solid fa-server"></i>
+            </div>
+            <h3>Backend & REST APIs</h3>
+            <div class="skills-list">
+              <div class="skill-row">
+                <div class="skill-info"><span>Node.js & Express Engines</span><span>90%</span></div>
+                <div class="skill-progress-bg"><div class="skill-progress-fill" data-percent="90"></div></div>
+              </div>
+              <div class="skill-row">
+                <div class="skill-info"><span>Python & API Pipelines</span><span>92%</span></div>
+                <div class="skill-progress-bg"><div class="skill-progress-fill" data-percent="92"></div></div>
+              </div>
+              <div class="skill-row">
+                <div class="skill-info"><span>Database Architecture (SQL/NoSQL)</span><span>84%</span></div>
+                <div class="skill-progress-bg"><div class="skill-progress-fill" data-percent="84"></div></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="skills-card glass-card">
+            <div class="skills-card-icon">
+              <i class="fa-solid fa-cloud"></i>
+            </div>
+            <h3>Cloud & Infrastructure</h3>
+            <div class="skills-list">
+              <div class="skill-row">
+                <div class="skill-info"><span>AWS & Cloud Deployments</span><span>86%</span></div>
+                <div class="skill-progress-bg"><div class="skill-progress-fill" data-percent="86"></div></div>
+              </div>
+              <div class="skill-row">
+                <div class="skill-info"><span>Docker Containers & Scale</span><span>80%</span></div>
+                <div class="skill-progress-bg"><div class="skill-progress-fill" data-percent="80"></div></div>
+              </div>
+              <div class="skill-row">
+                <div class="skill-info"><span>CI/CD Orchestration & Git</span><span>85%</span></div>
+                <div class="skill-progress-bg"><div class="skill-progress-fill" data-percent="85"></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         CAREER EXPERIENCE JOURNEY
+         ========================================== -->
+    <section class="timeline-section reveal" id="experience">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Milestones</span>
+          <h2 class="section-title">My Professional Journey</h2>
+          <p class="section-desc">A timeline of my employment engineering software, scaling web infrastructure, and coordinating with dynamic product teams.</p>
+        </div>
+
+        <div class="timeline-wrapper">
+          <!-- Item 1 -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content-panel glass-card">
+              <span class="timeline-date">2024 - Present</span>
+              <h4>Lead Full-Stack Engineer</h4>
+              <div class="timeline-sub">Apex Web Systems, Austin</div>
+              <p>Directing technical architectures for cloud-native web portals, distributed systems, and modern SaaS layers. Spearheaded microservice transitions boosting server scalability by 40%.</p>
+            </div>
+          </div>
+
+          <!-- Item 2 -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content-panel glass-card">
+              <span class="timeline-date">2022 - 2024</span>
+              <h4>Senior Software Engineer</h4>
+              <div class="timeline-sub">Summit Cloud Solutions, Houston</div>
+              <p>Managed full-stack web platforms and backend databases. Coordinated database optimizations, REST API caching schemas, and automated deployment pipelines for international B2B clients.</p>
+            </div>
+          </div>
+
+          <!-- Item 3 -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content-panel glass-card">
+              <span class="timeline-date">2020 - 2022</span>
+              <h4>Software Engineer Associate</h4>
+              <div class="timeline-sub">Silicon Minds Technology, Dallas</div>
+              <p>Built robust responsive frontend dashboards, customized client UI layouts, and integrated third-party telemetry APIs under agile release schedules.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         PORTFOLIO GRID / SHOWCASE
+         ========================================== -->
+    <section class="portfolio-section reveal" id="portfolio">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Showcase</span>
+          <h2 class="section-title">Featured Projects</h2>
+          <p class="section-desc">Explore a curated catalog of full-stack platforms, cloud architectures, and interactive UI/UX systems I have engineered and deployed.</p>
+        </div>
+
+        <div class="portfolio-filters" role="tablist">
+          <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">All Projects</button>
+          <button class="filter-btn" data-filter="sales" role="tab" aria-selected="false">Web Apps</button>
+          <button class="filter-btn" data-filter="sourcing" role="tab" aria-selected="false">Cloud APIs</button>
+          <button class="filter-btn" data-filter="compliance" role="tab" aria-selected="false">Creative UI</button>
+        </div>
+
+        <div class="portfolio-grid">
+          <!-- Project 1 (Web Apps) -->
+          <article class="portfolio-card glass-card" data-category="sales">
+            <div class="portfolio-img-box">
+              <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=600" alt="CoreAnalytics SaaS Portal Dashboard">
+            </div>
+            <div class="portfolio-details">
+              <div>
+                <div class="portfolio-tag">Enterprise SaaS</div>
+                <h3 class="portfolio-title">CoreAnalytics SaaS Portal</h3>
+                <p class="portfolio-desc">Engineered a premium enterprise SaaS dashboard utilizing Next.js, Node.js, and charts visualizers. Optimized database query schemas to handle 5M+ monthly metrics.</p>
+              </div>
+              <div class="portfolio-footer-row">
+                <div class="portfolio-tech-tags">
+                  <span class="tech-tag">Next.js</span>
+                  <span class="tech-tag">Node.js</span>
+                  <span class="tech-tag">PostgreSQL</span>
+                </div>
+                <a href="#contact" class="portfolio-link-arrow" aria-label="View CoreAnalytics SaaS Portal project"><i class="fa-solid fa-arrow-right"></i></a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2 (Cloud APIs) -->
+          <article class="portfolio-card glass-card" data-category="sourcing">
+            <div class="portfolio-img-box">
+              <img src="https://images.unsplash.com/photo-1559526324-4b87b5e36e44?auto=format&fit=crop&q=80&w=600" alt="Telemetry IoT Dispatch Engine dashboard">
+            </div>
+            <div class="portfolio-details">
+              <div>
+                <div class="portfolio-tag">Distributed Systems</div>
+                <h3 class="portfolio-title">Telemetry IoT Dispatch Engine</h3>
+                <p class="portfolio-desc">Coordinated highly parallel WebSocket dispatch connections and REST API telemetry routes. Implemented InfluxDB caching layers reducing data latency by 65%.</p>
+              </div>
+              <div class="portfolio-footer-row">
+                <div class="portfolio-tech-tags">
+                  <span class="tech-tag">WebSockets</span>
+                  <span class="tech-tag">InfluxDB</span>
+                  <span class="tech-tag">Go / Golang</span>
+                </div>
+                <a href="#contact" class="portfolio-link-arrow" aria-label="View Telemetry IoT Dispatch Engine project"><i class="fa-solid fa-arrow-right"></i></a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3 (Creative UI) -->
+          <article class="portfolio-card glass-card" data-category="compliance">
+            <div class="portfolio-img-box">
+              <img src="https://images.unsplash.com/photo-1607799279861-4dd421887fb3?auto=format&fit=crop&q=80&w=600" alt="AI Robotics Control Deck layout dashboard">
+            </div>
+            <div class="portfolio-details">
+              <div>
+                <div class="portfolio-tag">Creative UI/UX</div>
+                <h3 class="portfolio-title">AI Robotics Control Deck</h3>
+                <p class="portfolio-desc">Designed a hyper-interactive robotic manipulation deck using custom WebGL components and HSL neon CSS systems, achieving 99.8% visual layout alignment.</p>
+              </div>
+              <div class="portfolio-footer-row">
+                <div class="portfolio-tech-tags">
+                  <span class="tech-tag">WebGL</span>
+                  <span class="tech-tag">Vanilla CSS</span>
+                  <span class="tech-tag">System APIs</span>
+                </div>
+                <a href="#contact" class="portfolio-link-arrow" aria-label="View AI Robotics Control Deck project"><i class="fa-solid fa-arrow-right"></i></a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 4 (Web Apps) -->
+          <article class="portfolio-card glass-card" data-category="sales">
+            <div class="portfolio-img-box">
+              <img src="https://images.unsplash.com/photo-1516550893923-42d28e5677af?auto=format&fit=crop&q=80&w=600" alt="PulseRescue Medical Dashboard layout portrait">
+            </div>
+            <div class="portfolio-details">
+              <div>
+                <div class="portfolio-tag">Healthcare Systems</div>
+                <h3 class="portfolio-title">PulseRescue Medical Deck</h3>
+                <p class="portfolio-desc">Developed an FDA-compliant React telemetry client monitoring cardiac dispatch notifications. Styled with absolute accessibility and 99.9% fault-tolerant connections.</p>
+              </div>
+              <div class="portfolio-footer-row">
+                <div class="portfolio-tech-tags">
+                  <span class="tech-tag">React.js</span>
+                  <span class="tech-tag">Node.js</span>
+                  <span class="tech-tag">HIPAA Compliant</span>
+                </div>
+                <a href="#contact" class="portfolio-link-arrow" aria-label="View PulseRescue Medical Deck project"><i class="fa-solid fa-arrow-right"></i></a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         CLOUD INFRASTRUCTURE & DEPLOYMENT SIMULATOR
+         ========================================== -->
+    <section class="simulator-section reveal" id="sourcing-simulator">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Operational Telemetry</span>
+          <h2 class="section-title">Cloud Infrastructure & Deployment Simulator</h2>
+          <p class="section-desc">Interactive scale & cost matrix. Select your cloud architecture, configure scaling variables, and simulate a live container deployment run to calculate estimated hosting costing and system uptime profiles instantly.</p>
+        </div>
+
+        <div class="simulator-wrapper">
+          <!-- Left Configuration Form Panel -->
+          <div class="glass-card simulator-form-panel">
+            <div>
+              <h3>1. Cloud Parameters</h3>
+              
+              <div class="form-group">
+                <label for="sim-layers">Cloud Core Architecture</label>
+                <select id="sim-layers" class="select-custom" aria-label="Cloud Core Architecture">
+                  <option value="2">Monolith (Single VM Instance)</option>
+                  <option value="6" selected>Microservices (Container Cluster)</option>
+                  <option value="12">Edge Serverless (Distributed Compute Grid)</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="sim-dfm">High-Availability (HA) Scaling Tier</label>
+                <select id="sim-dfm" class="select-custom" aria-label="High-Availability Scaling Tier">
+                  <option value="standard">Basic Scale (Single-Zone / 92% Avg Uptime)</option>
+                  <option value="advanced">Pro Scale (Multi-Zone Auto-Scale / 98% Avg Uptime)</option>
+                  <option value="elite" selected>Enterprise Scale (Multi-Region Active-Active / 99.99% Max Uptime)</option>
+                </select>
+              </div>
+
+              <div class="range-slider-group" style="margin-top: 20px;">
+                <div class="range-labels">
+                  <label for="sim-quantity">Monthly Active Users (MAU)</label>
+                  <span class="range-val-bubble" id="sim-qty-bubble">5,000 users</span>
+                </div>
+                <input type="range" id="sim-quantity" class="range-slider" min="500" max="50000" step="500" value="5000" aria-label="Monthly Active Users">
+              </div>
+            </div>
+
+            <button class="btn-primary" id="btn-simulate-smt" aria-label="Deploy Cloud Infrastructure" style="width: 100%; justify-content: center; margin-top: 20px;">
+              <i class="fa-solid fa-industry"></i> Deploy Cloud Infrastructure
+            </button>
+          </div>
+
+          <!-- Right Telemetry Screen HUD Panel -->
+          <div class="simulator-screen-panel glass-card">
+            <div class="screen-header-hud">
+              <div class="screen-title-hud">
+                <span></span> Cloud Infrastructure Orchestrator
+              </div>
+              <div class="screen-clock-hud" id="system-clock-smt">SYS TIME: -- : -- : --</div>
+            </div>
+
+            <div class="gps-map-area" style="min-height: 260px;">
+              <div class="radar-sweep"></div>
+              
+              <!-- Idle Info State -->
+              <div class="sim-message-overlay" id="smt-message-intro">
+                <i class="fa-solid fa-microchip text-gradient-primary" style="font-size: 48px; margin-bottom: 16px; display: block;"></i>
+                <h4>Cloud Orchestrator Standby</h4>
+                <p>Configure scale parameters and traffic bounds on the left, then trigger "Deploy Cloud Infrastructure" to verify virtual node provisioning, container cluster scaling, and database replication sync.</p>
+              </div>
+
+              <!-- Animated PCB Soldering Matrix Layer -->
+              <div class="map-visualizer" id="pcb-visualizer" style="display: none; width: 100%; height: 100%; position: relative;">
+                <!-- Animated SMT Laser Sweep Line -->
+                <div class="laser-sweep" id="laser-sweep"></div>
+
+                <!-- Custom SVG representing PCB with SMT components -->
+                <svg class="route-svg" viewBox="0 0 400 200" style="padding: 20px;">
+                  <!-- PCB Green Silkscreen Base -->
+                  <rect x="20" y="20" width="360" height="160" rx="10" fill="#0C2318" stroke="#00F5A0" stroke-width="2" opacity="0.8" />
+                  
+                  <!-- Copper Traces -->
+                  <path id="pcb-trace-1" class="pcb-trace" d="M 40,50 L 100,50 L 120,90 L 200,90 M 120,90 L 120,150 L 300,150" fill="none" stroke="#10B981" stroke-width="2" stroke-dasharray="10,6" opacity="0.75" />
+                  <path id="pcb-trace-2" class="pcb-trace" d="M 280,50 L 320,50 L 350,90 L 350,130" fill="none" stroke="#10B981" stroke-width="2" stroke-dasharray="10,6" opacity="0.75" />
+                  
+                  <!-- SMT Chip Coordinates -->
+                  <rect class="smt-component" x="50" y="40" width="20" height="15" rx="2" fill="#1F2937" stroke="rgba(255,255,255,0.2)" />
+                  <circle class="smt-component" cx="110" cy="48" r="8" fill="#1F2937" stroke="rgba(255,255,255,0.2)" />
+                  <rect class="smt-component" x="160" y="40" width="35" height="25" rx="3" fill="#1F2937" stroke="rgba(255,255,255,0.2)" />
+                  
+                  <rect class="smt-component" x="60" y="110" width="30" height="40" rx="3" fill="#1F2937" stroke="rgba(255,255,255,0.2)" />
+                  <circle class="smt-component" cx="150" cy="120" r="10" fill="#1F2937" stroke="rgba(255,255,255,0.2)" />
+                  <rect class="smt-component" x="220" y="100" width="50" height="50" rx="4" fill="#1F2937" stroke="rgba(255,255,255,0.2)" />
+                  
+                  <rect class="smt-component" x="250" y="35" width="45" height="45" rx="4" fill="#1F2937" stroke="rgba(255,255,255,0.2)" />
+                  
+                  <rect class="smt-component" x="340" y="40" width="15" height="120" rx="2" fill="#1F2937" stroke="rgba(255,255,255,0.2)" />
+                </svg>
+              </div>
+            </div>
+
+            <!-- Telemetry Live SMT Readings HUD -->
+            <div class="screen-footer-telemetry">
+              <div class="telemetry-stat-hud">
+                <p>Deployment Status</p>
+                <h5 id="hud-smt-status">STANDBY</h5>
+              </div>
+              <div class="telemetry-stat-hud">
+                <p>System Latency</p>
+                <h5 class="cyan-val" id="hud-smt-lead">-- ms</h5>
+              </div>
+              <div class="telemetry-stat-hud">
+                <p>Est. Service Uptime</p>
+                <h5 id="hud-smt-yield">-- %</h5>
+              </div>
+              <div class="telemetry-stat-hud">
+                <p>Monthly Cloud Bill</p>
+                <h5 class="cyan-val" id="hud-smt-unit-cost">$0.00</h5>
+              </div>
+              <div class="telemetry-stat-hud">
+                <p>Active Containers</p>
+                <h5 id="hud-smt-placements">0 / 240</h5>
+              </div>
+              <div class="telemetry-stat-hud">
+                <p>Orchestrator Status</p>
+                <h5 class="emerald-val" id="hud-smt-active-tag">SYSTEM ONLINE</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         TESTIMONIALS & SOCIAL PROOF
+         ========================================== -->
+    <section class="testimonials-section reveal" id="testimonials">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Endorsements</span>
+          <h2 class="section-title">What Collaborators Say</h2>
+          <p class="section-desc">Read reviews from product directors, assembly line managers, and compliance auditors who partnered with me on complex hardware systems.</p>
+        </div>
+
+        <div class="slider-container glass-card">
+          <!-- Slide 1 -->
+          <div class="testimonial-slide active">
+            <div class="testimonial-stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p class="testimonial-quote">
+              "Rishabh has a rare, balanced capacity to design high-performance multilayer circuit boards and simultaneously construct clean, optimized embedded firmware in C. His focus on SMT line optimizations saved our product's factory yield rate."
+            </p>
+            <div class="testimonial-author">
+              <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&q=80&w=150" alt="Sarah Jenkins portrait" class="author-img">
+              <div style="text-align: left;">
+                <div class="author-name">Sarah Jenkins</div>
+                <div class="author-role">Director of Hardware, Apex Solutions Inc.</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="testimonial-slide">
+            <div class="testimonial-stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p class="testimonial-quote">
+              "Working with Rishabh on our complex ARM Cortex robotic integration was a masterclass in clean engineering. He has an outstanding grip on IPC layout standards, component lifecycle management, and DFM guidelines under strict timeline limits."
+            </p>
+            <div class="testimonial-author">
+              <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=150" alt="David Miller portrait" class="author-img">
+              <div style="text-align: left;">
+                <div class="author-name">David Miller</div>
+                <div class="author-role">Lead SMT Assembly Manager, Summit Hardware</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="testimonial-slide">
+            <div class="testimonial-stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p class="testimonial-quote">
+              "Rishabh delivered a custom medical sensor board prototyping within our strict biometrics constraints. His Altium layouts are clean and exceed standard EMC shielding requirements. Flawless telemetry hardware."
+            </p>
+            <div class="testimonial-author">
+              <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=150" alt="Dr. Amanda Ross portrait" class="author-img">
+              <div style="text-align: left;">
+                <div class="author-name">Dr. Amanda Ross, MD</div>
+                <div class="author-role">Chief Compliance Auditor, HealthTech Labs</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Navigation Controls -->
+          <div class="slider-nav">
+            <button class="slider-btn" id="slider-prev" aria-label="Previous Testimonial">
+              <i class="fa-solid fa-chevron-left"></i>
+            </button>
+            <div class="slider-dots">
+              <span class="dot active"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+            </div>
+            <button class="slider-btn" id="slider-next" aria-label="Next Testimonial">
+              <i class="fa-solid fa-chevron-right"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         CONTACT / LET'S COLLABORATE CONSOLE
+         ========================================== -->
+    <section class="contact-section reveal" id="contact">
+      <div class="container">
+        <div class="glass-card contact-card">
+          <div class="contact-info-panel">
+            <h3>Let's Construct Something Great.</h3>
+            <p>Have an interesting hardware schematic, a high-density PCB routing board contract, or want to discuss automated factory testing configurations? Submit your parameters below!</p>
+            
+            <div class="contact-details">
+              <div class="contact-detail-item">
+                <div class="contact-icon-box">
+                  <i class="fa-solid fa-envelope"></i>
+                </div>
+                <div class="contact-detail-text">
+                  <h6>Direct Inbox</h6>
+                  <p>hello@rishabh-dev.com</p>
+                </div>
+              </div>
+
+              <div class="contact-detail-item">
+                <div class="contact-icon-box">
+                  <i class="fa-solid fa-map-location-dot"></i>
+                </div>
+                <div class="contact-detail-text">
+                  <h6>Base Operations</h6>
+                  <p>Austin, Texas (Available Worldwide)</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-form-panel">
+            <form class="newsletter-form" id="contact-form" novalidate>
+              <h4>Collaboration Console</h4>
+              <p>Share your hardware engineering parameters and let's coordinate.</p>
+              
+              <div class="form-group">
+                <label for="contact-name">Your Name</label>
+                <input type="text" id="contact-name" class="input-custom" placeholder="Johnathan Doe" required aria-label="Your Name">
+              </div>
+
+              <div class="form-group">
+                <label for="contact-email">Email Address</label>
+                <input type="email" id="contact-email" class="input-custom" placeholder="j.doe@organisation.com" required aria-label="Email Address">
+              </div>
+
+              <div class="form-group">
+                <label for="contact-notes">Project Context / Operational Parameters</label>
+                <textarea id="contact-notes" class="input-custom" rows="3" placeholder="Tell me about your product objectives, timeline limits, tech stack configurations..." aria-label="Project Context"></textarea>
+              </div>
+
+              <button type="submit" class="btn-submit-contact" aria-label="Submit Intake Form">
+                <i class="fa-solid fa-rocket"></i> Launch Connection
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================
+       FOOTER SECTION
+       ========================================== -->
+  <footer>
+    <div class="container footer-grid">
+      <div class="footer-logo-area">
+        <a href="#" class="logo" aria-label="Rishabh Home">
+          Rishabh<span>.</span>
+        </a>
+        <p>Creating high-performance digital products by merging robust computer science foundations with state-of-the-art visual experiences.</p>
+      </div>
+
+      <div class="footer-col">
+        <h5>Quick Links</h5>
+        <ul class="footer-links">
+          <li><a href="#about">About Philosophy</a></li>
+          <li><a href="#skills">Technical Matrix</a></li>
+          <li><a href="#experience">Career History</a></li>
+          <li><a href="#portfolio">Featured Portfolio</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h5>Connections</h5>
+        <ul class="footer-links">
+          <li><a href="#contact">Hire Direct</a></li>
+          <li><a href="#testimonials">Client Endorsements</a></li>
+          <li><a href="#hero">Back To Top</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <div class="footer-copyright">
+        &copy; 2026 Rishabh. All Rights Reserved. Built with custom Vanilla structures.
+      </div>
+      
+      <div class="social-links">
+        <a href="#" class="social-btn" aria-label="Rishabh on LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="#" class="social-btn" aria-label="Rishabh on Twitter"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#" class="social-btn" aria-label="Rishabh on GitHub"><i class="fa-brands fa-github"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Link custom interactive application scripts -->
+  <script src="app.js"></script>
+</body>
+</html>
